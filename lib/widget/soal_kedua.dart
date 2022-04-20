@@ -7,9 +7,11 @@ class SoalKedua extends StatelessWidget {
   List<KotakWarna> kotakWarna = List.generate(
       30,
       (index) => KotakWarna(
-          nama: "Kotak ke ${index + 1}",
-          warna: Color.fromARGB(255, 200 + Random().nextInt(256),
-              200 + Random().nextInt(256), 200 + Random().nextInt(256))));
+            nama: "Kotak ke ${index + 1}",
+            warna: Color.fromARGB(255, 200 + Random().nextInt(256),
+                200 + Random().nextInt(256), 200 + Random().nextInt(256)),
+            gambar: Image(image: AssetImage("assets/apples.png")),
+          ));
 
   @override
   Widget build(BuildContext context) {
