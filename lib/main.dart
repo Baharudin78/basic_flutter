@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import './widget/kotak_warna.dart';
 import './widget/soal_ketiga.dart';
 import './widget/soal_keempat.dart';
+import './widget/soal_kelima.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,9 +15,9 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SoalKeempat(),
+      home: SoalKelima(),
     );
   }
 }
